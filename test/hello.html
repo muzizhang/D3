@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>hello world</title>
+</head>
+<body>
+  <p class="test">hello world 1</p>
+  <p class="test">hello world 2</p>
+  <script>
+    var paragraphs = document.getElementsByTagName('p')
+    console.log('test===', document.getElementsByClassName('test'))
+    console.log(paragraphs)
+    for (let i = 0; i < paragraphs.length; i++) {
+      let paragraph = paragraphs.item(i);
+      // let paragraph = paragraphs(i);
+      paragraph.innerHTML = 'I like dog.'
+    }
+  </script>
+</body>
+</html>

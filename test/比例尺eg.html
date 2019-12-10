@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script src="../d3.min.js"></script>
+  <script>
+    let index = [0, 1, 2, 3, 4];
+    let color = ["red", "blue", "green", "yellow", "black"];
+
+    let ordinal = d3.scaleOrdinal()
+      .domain(index)
+      .range(color)
+    console.log(ordinal(-1))
+    console.log(ordinal(1))
+    console.log(ordinal(5))
+    console.log(ordinal(0.45))
+    console.log(ordinal(1.55))
+    // console.log(ordinal(6))
+    // console.log(ordinal(16))
+  </script>
+</body>
+</html>
